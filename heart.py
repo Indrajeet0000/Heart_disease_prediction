@@ -19,7 +19,7 @@ chol = st.number_input("Serum Cholesterol", min_value=100, max_value=600, value=
 fbs = st.selectbox("Fasting Blood Sugar > 120 mg/dl", options=[0, 1])
 restecg = st.selectbox("Resting Electrocardiographic Results", options=[0, 1, 2])
 max_hr = st.slider("Maximum Heart Rate", min_value=60, max_value=220, value=150)
-exang = st.selectbox("Exercise Induced Angina", options=[0, 1])
+exang = st.selectbox("Exercise Induced Angina", options=["no", "yes"])
 oldpeak = st.number_input("ST Depression Induced by Exercise", min_value=0.0, max_value=10.0, value=1.0)
 slope = st.selectbox("Slope of the Peak Exercise ST Segment", options=[0, 1, 2])
 
